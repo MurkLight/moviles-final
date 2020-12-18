@@ -1,8 +1,5 @@
 package com.example.proyecto.Fragments;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.proyecto.R;
 
@@ -32,6 +30,7 @@ public class MainFragment extends Fragment implements View.OnClickListener  {
         payment.setOnClickListener(this);
         mapas.setOnClickListener(this);
 
+        //Fragment nuevoFragmento = new BlankFragment();
 
         return view;
     }
@@ -41,7 +40,31 @@ public class MainFragment extends Fragment implements View.OnClickListener  {
 
         switch (v.getId()){
             case R.id.gallery:
+                // Crea el nuevo fragmento y la transacción.
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.container, new GalleryFragment());
+                transaction.addToBackStack(null);
 
+                // Commit a la transacción
+                transaction.commit();
+                break;
+            case R.id.payment:
+                // Crea el nuevo fragmento y la transacción.
+                FragmentTransaction transaction2 = getFragmentManager().beginTransaction();
+                transaction2.replace(R.id.container, new PayFragment());
+                transaction2.addToBackStack(null);
+
+                // Commit a la transacción
+                transaction2.commit();
+                break;
+            case R.id.mapas:
+                // Crea el nuevo fragmento y la transacción.
+                FragmentTransaction transaction3 = getFragmentManager().beginTransaction();
+                transaction3.replace(R.id.container, new MapFragment());
+                transaction3.addToBackStack(null);
+
+                // Commit a la transacción
+                transaction3.commit();
                 break;
 
         }
