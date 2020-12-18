@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/carro_imagen"
+            android:layout_width="103dp"
+            android:layout_height="59dp"
+            android:src="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/text_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/carro_imagen"
+            android:layout_toRightOf="@+id/carro_imagen"
+            android:text="Marca:"
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/text_marca"
+            android:layout_toRightOf="@+id/carro_imagen"
+            android:text="Audi"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/text_agencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_marca"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/carro_imagen"
+            android:text="Agencia:"
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Agencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_marca"
+            android:layout_toEndOf="@+id/text_agencia"
+            android:layout_toRightOf="@+id/carro_imagen"
+            android:text="Audi Bosques"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/text_modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_agencia"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/carro_imagen"
+            android:text="Modelo:"
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_agencia"
+            android:layout_toEndOf="@+id/text_modelo"
+            android:layout_toRightOf="@+id/carro_imagen"
+            android:text="A10"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/text_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_modelo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/carro_imagen"
+            android:text="Precio:"
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_modelo"
+            android:layout_toEndOf="@+id/text_precio"
+            android:layout_toRightOf="@+id/carro_imagen"
+            android:text="5,500"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

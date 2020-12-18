@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="Principal">
+            <menu>
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home">
+
+                </item>
+                <item
+                    android:id="@+id/gallery"
+                    android:icon="@drawable/ic_car"
+                    android:title="Galeria de Carros">
+
+                </item>
+                <item
+                    android:id="@+id/mapa"
+                    android:icon="@drawable/ic_map"
+                    android:title="Mapa">
+
+                </item>
+                <item
+                    android:id="@+id/pagos"
+                    android:icon="@drawable/ic_payment"
+                    android:title="Metodos de Pago">
+
+                </item>
+                <item
+                    android:id="@+id/info"
+                    android:icon="@drawable/ic_info"
+                    android:title="Ayuda">
+
+                </item>
+                <item
+                    android:id="@+id/login"
+                    android:icon="@drawable/ic_person"
+                    android:title="Login">
+
+                </item>
+            </menu>
+        </item>
+</menu>
