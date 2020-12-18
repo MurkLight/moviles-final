@@ -1,6 +1,8 @@
 package com.example.proyecto.Adaptadores;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.DrawableWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,13 +45,13 @@ public class AdapterCarros extends RecyclerView.Adapter<AdapterCarros.ViewHolder
         String marca=model.get(position).getMarca();
         String modelo=model.get(position).getModelo();
         String precio=model.get(position).getPrecio();
-        String agencia=model.get(position).getAgencia();
-        int imagen=model.get(position).getImagenid();
+        String capacidad=model.get(position).getCapacidad();
+        Drawable imagen=model.get(position).getImagen();
         holder.marca.setText(marca);
-        holder.agencia.setText(agencia);
+        holder.agencia.setText(capacidad);
         holder.modelo.setText(modelo);
         holder.precio.setText(precio);
-        holder.imagen.setImageResource(imagen);
+        holder.imagen.setImageDrawable(imagen);
     }
 
     @Override

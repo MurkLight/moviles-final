@@ -55,7 +55,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/carro_imagen"
-            android:text="Agencia:"
+            android:text="Capacidad:"
             android:textColor="#0E0C0C"
             android:textSize="18sp"
             android:textStyle="bold"></TextView>
