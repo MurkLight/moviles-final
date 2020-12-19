@@ -48,25 +48,30 @@ public class MapFragment extends Fragment {
         IMapController mapController = map.getController();
         mapController.setZoom(13.5);
 
-        GeoPoint startPoint = new GeoPoint(21.89878646420733, -102.30413435104954);
-        mapController.setCenter(startPoint);
-        Marker startMarker = new Marker(map);
-        startMarker.setPosition(startPoint);
-        startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        startMarker.setTitle("Start point");
-        map.getOverlays().add(startMarker);
+        GeoPoint volk = new GeoPoint(21.916055098204037, -102.29598821374572);
+        mapController.setCenter(volk);
+        Marker volkMarker = new Marker(map);
+        volkMarker.setPosition(volk);
+        volkMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        volkMarker.setTitle("Volkswagen Dealership");
+        map.getOverlays().add(volkMarker);
         MyLocationNewOverlay test = new MyLocationNewOverlay(new GpsMyLocationProvider(ctx), map);
         test.enableMyLocation();
         map.getOverlays().add(test);
 
+        GeoPoint chev = new GeoPoint(21.898522098239553, -102.31682458795173);
+        Marker chevMarker = new Marker(map);
+        chevMarker.setPosition(chev);
+        chevMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        chevMarker.setTitle("Chevrolet Dealership");
+        map.getOverlays().add(chevMarker);
 
-        GeoPoint endPoint = new GeoPoint(20.91558026803523, -102.2959450933641);
-
-        Marker endMarker = new Marker(map);
-        endMarker.setPosition(endPoint);
-        endMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
-        endMarker.setTitle("End point");
-        map.getOverlays().add(endMarker);
+        GeoPoint bmw = new GeoPoint(21.915196683883146, -102.29534893394872);
+        Marker bmwMarker = new Marker(map);
+        bmwMarker.setPosition(bmw);
+        bmwMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+        bmwMarker.setTitle("BMW Dealership");
+        map.getOverlays().add(bmwMarker);
 
 
         requestPermissionsIfNecessary(new String[] {
